@@ -1,10 +1,15 @@
+Landamrks
+
+<% Landmark.all.each do |landmark| %>
+
+  <%= landmark.name %>
+
+<% end %>
+
 <table>
-  <tr>
-    <th>Name</th>
-    <th>Year Completed</th>
-  </tr>
-  <tr>
-    <td><%= @landmark.name %></td>
-    <td><%= @landmark.year_completed %></td>
-  </tr>
-<table>
+  <tr><%= @landmark.name %></a>
+  <tr><%= @landmark.year_completed %></a>
+  <tr><%= @landmark.figure %></a>
+</table>
+
+<br>
